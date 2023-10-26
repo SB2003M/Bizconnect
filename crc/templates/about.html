@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="form-register">
+    <h4>Formulario inicio de secion</h4>
+    <form method="post">
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre de usuario">
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acuerdo con <a href="">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Iniciar secion">
+        <p><a href="#">¿No tienes una cuenta?</a></p>
+    </form>
+
+    <?php
+    
+    ?>
+{% endblock%}
