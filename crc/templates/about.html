@@ -1,0 +1,39 @@
+{% extends "Base_form.html" %}
+
+{% block content %}
+
+<section class="form-register">
+    <h3>Formulario de registro: Inversionistas</h3>
+
+    <br />
+    <h4>Datos personales:</h4>
+
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre de usuario">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="date" type="date" name="FechaNac" name="FechaNac" />
+        <input class="controls" type="int" name="telefono" id="telefono" placeholder="Ingrese su numero de contacto">
+        
+    <h4>Informcacion financiera:</h4>
+        
+    <input class="controls" type="int" name="ingresoanual" id="ingresoanual" placeholder="ingresos anuales">
+    <input class="controls" type="int" name="ValorN" id="ValorN" placeholder="Valor neto de la empresa">
+    <input class="controls" type="text" name="HistoriaIP" id="HistoriaIP" placeholder="Inversiones previas">
+    <input class="controls" type="text" name="ToleranciaRF" id="ToleranciaRF" placeholder="Tolerancia al riesgo financiero">
+    <input class="controls" type="text" name="Ocupacion" id="Ocupacion" placeholder="Ocupacion">
+    <input class="controls" type="text" name="ObjetivosI" id="ObjetivosI" placeholder="Objetivos de inversión">
+    <h4>Documentacion:</h4>
+    
+    <input class="file" type="file" name="Documentacion" id="Documentacion" placeholder="Documento de identidad valido">
+    <input class="controls" type="text" name="InfoBancaria" id="InfoBancaria" placeholder="Informacion bancaria">
+    <input class="controls" type="int" name="IDfiscal" id="IDfiscal" placeholder="Numero de ID fiscal (NIF o equivalentes)">
+    <input class="file" type="file" name="Firma" id="Firma" placeholder="Firma digital">
+    <h4>Experiencia:</h4>
+
+    <input class="controls" type="text" name="Conocimiento" id="Conocimiento" placeholder="Conocimientos en inversiones">
+    <input class="controls" type="text" name="TiposActivos" id="TiposActivos" placeholder="Tipos de activos en los que ha invertido">
+
+    <p>Estoy de acuerdo con <a href="">Terminos y Condiciones</a></p>
+    <p><a href="{{ url_for('Inicio') }}">¿Ya tienes una cuenta?</a></p>
+    <input class="botons" type="submit" value="Enviar formulario">
+
+{% endblock%}

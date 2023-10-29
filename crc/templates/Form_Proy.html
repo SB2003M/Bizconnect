@@ -1,0 +1,38 @@
+{% extends "Base_form.html" %}
+
+{% block content %}
+
+<section class="form-register">
+    <h3>Formulario de registro: Emprendedores</h3>
+
+    <br />
+    <h4>Datos del proyecto:</h4>
+
+    <input class="controls" type="text" name="nom_proy" id="nom_proy" placeholder="Ingrese el nombre del proyecto">
+    <input class="controls" type="text" name="Descrip" id="Descrip" placeholder="Descripcion general">
+        
+    <h4>Detalles financieros:</h4>
+        
+    <input class="controls" type="int" name="Dinero" id="Dinero" placeholder="Financiamiento necesario">
+    <input class="controls" type="int" name="Dine_p" id="Dine_p" placeholder="Capital propio">
+    <input class="controls" type="text" name="Usos" id="Usos" placeholder="Como se empleara el financiamiento">
+   
+    <h4>Informacion legal:</h4>
+    
+    <input class="controls" type="text" name="Legal" id="Legal" placeholder="Estructura legal del proyecto">
+    <input class="file" type="file" name="Docu_legal" id="Docu_legal" placeholder="Documento legal">
+    <input class="controls" type="text" name="Antecede" id="Antecede" placeholder="Antecedentes del equipo de gestión">
+
+    <h4>informacion extra:</h4>
+
+    <input class="controls" type="text" name="publico" id="publico" placeholder="Analisis de mercado y publico objetivo">
+    <input class="controls" type="text" name="Detalle" id="Detalle" placeholder="Detalles sobre el producto">
+    <input class="controls" type="text" name="Doc_apollo" id="Doc_apollo" placeholder="Documentación de apoyo">
+    <input class="controls" type="text" name="Deta_util" id="Deta_util" placeholder="Detalles de como se utilizara el financiamiento">
+    <input class="controls" type="text" name="Proyeccion" id="Proyeccion" placeholder="Proyeccion financiera (Retorno de inversion)">
+
+    <p>Estoy de acuerdo con <a href="">Terminos y Condiciones</a></p>
+    <p><a href="{{ url_for('Inicio') }}">¿Ya tienes una cuenta?</a></p>
+    <input class="botons" type="submit" value="Enviar formulario">
+
+{% endblock%}

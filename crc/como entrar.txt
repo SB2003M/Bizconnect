@@ -1,0 +1,6 @@
+ingresar a bisscon= 
+c:
+cd..
+cd..
+cd xampp/htdocs/Proyect Ing Soft/crc
+python Bisscon.py
